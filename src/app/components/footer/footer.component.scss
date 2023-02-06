@@ -1,0 +1,90 @@
+.footer {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    .box {
+      padding: 1rem 0;
+
+      .logo {
+        padding-bottom: 1rem;
+        color: var(--green);
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 2.2rem;
+        color: var(--white);
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: var(--light-color);
+        padding: 1rem 0;
+        line-height: 2;
+        display: flex;
+        align-items: center;
+
+        img {
+          padding-right: 0.5rem;
+        }
+      }
+
+      .share {
+        padding-top: 1rem;
+
+        img {
+          height: 4.5rem;
+          width: 4.5rem;
+          padding: 1.1rem;
+          line-height: 4.5rem;
+          font-size: 2rem;
+          border-radius: 30%;
+          font-size: 1.7rem;
+          border: var(--border);
+          margin-right: 0.5rem;
+          text-align: center;
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+            transform: translateY(-10px);
+          }
+        }
+      }
+
+      .links {
+        font-size: 1.4rem;
+        color: var(--light-color);
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: var(--green);
+
+          img {
+            margin-right: 2rem;
+          }
+        }
+
+        img {
+          margin-right: 0.5rem;
+          color: var(--green);
+        }
+      }
+
+      form .email {
+        width: 100%;
+        border-radius: 5rem;
+        border: var(--border);
+        background: none;
+        font-size: 1.5rem;
+        text-transform: none;
+        color: var(--light-color);
+        margin-bottom: 1rem;
+        padding: 1.2rem 1.4rem;
+      }
+    }
+  }
+}

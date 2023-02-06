@@ -1,0 +1,30 @@
+.banner {
+  background: linear-gradient(var(--black-bg), var(--black-bg)),
+    url(../../../assets/images/bg/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+
+  &__content {
+    span {
+      font-size: 2rem;
+      color: var(--green);
+    }
+
+    h3 {
+      font-size: 4rem;
+      color: var(--white);
+      margin-top: 1rem;
+    }
+
+    p {
+      max-width: 60rem;
+      margin: 1rem auto;
+      font-size: 1.4rem;
+      color: var(--light-color);
+      line-height: 2;
+    }
+  }
+}

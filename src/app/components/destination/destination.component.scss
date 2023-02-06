@@ -1,0 +1,60 @@
+// @include grid(27rem);
+.destination {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__content {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--bg-color);
+
+    &:hover .destination__image {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image {
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content-s {
+    padding: 2rem;
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    p {
+      padding: 1rem 0;
+      font-size: 1.4rem;
+      color: var(--light-color);
+      line-height: 2;
+    }
+
+    a {
+      font-size: 2.1rem;
+      color: var(--green);
+
+      &:hover img {
+        margin-left: 1rem;
+      }
+
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

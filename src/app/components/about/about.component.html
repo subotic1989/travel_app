@@ -1,0 +1,36 @@
+<section class="about" id="about">
+  <div class="about__video" data-aos="fade-right" data-aos-delay="300">
+    <video class="video" #videoPlayer autoplay loop>
+      <source src="../../../assets/videos/about-vid-1.mp4" muted />
+    </video>
+    <div class="about__controls">
+      <span
+        class="control-btn"
+        data-src="images/about-vid-1.mp4"
+        (click)="changeSource('../../../assets/videos/about-vid-1.mp4')"
+      ></span>
+      <span
+        class="control-btn"
+        data-src="images/about-vid-2.mp4"
+        (click)="changeSource('../../../assets/videos/about-vid-2.mp4')"
+      ></span>
+      <span
+        class="control-btn"
+        data-src="images/about-vid-3.mp4"
+        (click)="changeSource('../../../assets/videos/about-vid-3.mp4')"
+      ></span>
+    </div>
+  </div>
+
+  <div class="about__content" data-aos="fade-left" data-aos-delay="600">
+    <span>why choose us?</span>
+    <h3>Nature's Majesty Awaits You</h3>
+    <p>
+      Choose us for your next travel adventure and experience personalized
+      service tailored to your individual needs. With our extensive knowledge
+      and expertise in the travel industry, we guarantee a seamless and
+      unforgettable trip.
+    </p>
+    <a href="#" class="btn">read more</a>
+  </div>
+</section>

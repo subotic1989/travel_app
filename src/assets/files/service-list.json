@@ -1,0 +1,32 @@
+[
+  {
+    "img": "../../../assets/images/icons/world.svg",
+    "title": "worldwide",
+    "text": "Explore the world's most fascinating destinations with us."
+  },
+  {
+    "img": "../../../assets/images/icons/hike.svg",
+    "title": "adventures",
+    "text": "Embark on exciting and unique travel experiences with us."
+  },
+  {
+    "img": "../../../assets/images/icons/food.svg",
+    "title": "food & drinks",
+    "text": "Indulge in the local cuisine and flavors of your destination with our curated food and drink options."
+  },
+  {
+    "img": "../../../assets/images/icons/hotel.svg",
+    "title": "affordable hotels",
+    "text": "Stay in comfortable and convenient accommodations without breaking the bank."
+  },
+  {
+    "img": "../../../assets/images/icons/price.svg",
+    "title": "affordable price",
+    "text": "Enjoy competitive prices and value for money on all of our travel packages."
+  },
+  {
+    "img": "../../../assets/images/icons/support.svg",
+    "title": "24/7 support",
+    "text": "Have peace of mind with our dedicated customer support team available around the clock."
+  }
+]

@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+
+  &__menu-btn {
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+    width: 3rem;
+  }
+
+  &__navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    display: inline-block;
+    margin: 0 1rem;
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 0;
+  }
+}
+
+/*=============== MEDIA ===============*/
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 2rem;
+
+    &__menu-btn {
+      display: inline-block !important;
+    }
+
+    &__navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: var(--bg-color);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+      }
+    }
+
+    .active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}

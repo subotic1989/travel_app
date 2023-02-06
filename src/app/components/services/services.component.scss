@@ -1,0 +1,37 @@
+.services {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__content {
+    background: var(--bg-color);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid var(--black);
+
+    &:hover {
+      border: var(--border);
+    }
+  }
+
+  &__img {
+    font-size: 4rem;
+    color: var(--green);
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: var(--white);
+  }
+
+  &__text {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 2;
+  }
+}

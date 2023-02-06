@@ -1,0 +1,41 @@
+<section class="blogs" id="blogs">
+  <div class="heading">
+    <span>blogs & posts</span>
+    <h1>we untold stories</h1>
+  </div>
+
+  <div class="box-container">
+    <div
+      class="box"
+      data-aos="fade-up"
+      data-aos-delay="150"
+      *ngFor="let blog of blogList"
+    >
+      <div class="image">
+        <img src="{{ blog.img }}" alt="" />
+      </div>
+      <div class="content">
+        <a href="#" class="link">{{ blog.title }}</a>
+        <p>{{ blog.text }}</p>
+        <div class="icon">
+          <a href="#">
+            <img
+              src="../../../assets/images/icons/watch.svg"
+              class="icon-m"
+              alt=""
+            />
+            {{ blog.date }}</a
+          >
+          <a href="#">
+            <img
+              src="../../../assets/images/icons/user.svg"
+              class="icon-xs"
+              alt=""
+            />
+            by admin</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

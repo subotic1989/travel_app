@@ -1,0 +1,38 @@
+<header class="header">
+  <img
+    src="../../../assets/images/icons/menu.svg"
+    alt="travel"
+    class="header__menu-btn"
+    (click)="isOpen = !isOpen"
+  />
+
+  <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="header__logo">
+    <img
+      src="../../../assets/images/icons/travel.svg"
+      alt="travel"
+      class="icon-m"
+    />
+    kontiki
+  </a>
+
+  <nav class="header__navbar" [ngClass]="{ active: isOpen }">
+    <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+    <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+    <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination"
+      >destination</a
+    >
+    <a data-aos="zoom-in-left" data-aos-delay="750" href="#services"
+      >services</a
+    >
+    <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
+    <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+  </nav>
+
+  <a
+    data-aos="zoom-in-left"
+    data-aos-delay="1300"
+    href="#book-form"
+    class="btn header__btn"
+    >book now</a
+  >
+</header>

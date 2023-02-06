@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Barcelona",
+    "img": "../../../assets/images/cards/barcelona.jpg",
+    "text": "Discover The Vibrant Culture And Stunning Architecture Of This Catalan Gem."
+  },
+  {
+    "title": "Berlin",
+    "img": "../../../assets/images/cards/berlin.jpg",
+    "text": "Immerse yourself in the rich history and contemporary art scene of Germany's capital."
+  },
+  {
+    "title": "Dubrovnik",
+    "img": "../../../assets/images/cards/croatia.jpg",
+    "text": "Explore the ancient walls and picturesque streets of this UNESCO World Heritage Site."
+  },
+  {
+    "title": "Amsterdam",
+    "img": "../../../assets/images/cards/amsterdam.jpg",
+    "text": "Experience the charming canals and world-class museums of this Dutch city."
+  },
+  {
+    "title": "Paris",
+    "img": "../../../assets/images/cards/paris.jpg",
+    "text": "Indulge in the art, fashion, and culinary delights of the City of Light."
+  },
+  {
+    "title": "Wien",
+    "img": "../../../assets/images/cards/wien.jpg",
+    "text": "Take in the grandeur of the Habsburg Empire in the music capital of the world."
+  },
+  {
+    "title": "Budapest",
+    "img": "../../../assets/images/cards/budapest.jpg",
+    "text": "Admire the stunning architecture and soak in the thermal baths of this Hungarian city."
+  },
+  {
+    "title": "London",
+    "img": "../../../assets/images/cards/london.jpg",
+    "text": "Explore the iconic landmarks and diverse neighborhoods of this cosmopolitan capital."
+  }
+]

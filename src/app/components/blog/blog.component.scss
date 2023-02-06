@@ -1,0 +1,78 @@
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+
+  .box {
+    border-radius: 1rem;
+    background: var(--bg-color);
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .image img {
+        transform: scale(1.1);
+      }
+    }
+
+    .image {
+      height: 25rem;
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      margin-bottom: 3rem !important;
+      padding: 2rem;
+      height: auto;
+
+      .link {
+        font-size: 2rem;
+        color: var(--white);
+
+        &:hover {
+          color: var(--green);
+        }
+      }
+
+      p {
+        padding: 1rem 0;
+        font-size: 1.4rem;
+        color: var(--light-color);
+        line-height: 2;
+      }
+
+      .icon {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        left: 5%;
+
+        a {
+          font-size: 1.4rem;
+          color: var(--light-color);
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            color: var(--green);
+          }
+
+          img {
+            margin-right: 0.5rem;
+            color: var(--green);
+          }
+        }
+      }
+    }
+  }
+}

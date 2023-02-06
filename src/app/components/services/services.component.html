@@ -1,0 +1,19 @@
+<section class="services" id="services">
+  <div class="heading">
+    <span>our services</span>
+    <h1>countless expericences</h1>
+  </div>
+
+  <div class="services__container">
+    <div
+      class="services__content"
+      data-aos="zoom-in-up"
+      data-aos-delay="150"
+      *ngFor="let service of serviceList"
+    >
+      <img src="{{ service.img }}" alt="" class="icon-l services__img" />
+      <h3 class="services__title">{{ service.title }}</h3>
+      <p class="services__text">{{ service.text }}</p>
+    </div>
+  </div>
+</section>

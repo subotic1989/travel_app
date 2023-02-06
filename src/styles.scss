@@ -1,1 +1,168 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+/*=============== GENERAL ===============*/
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 5rem;
+  }
+}
+
+body {
+  background: var(--black);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  span {
+    color: var(--green);
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: var(--white);
+  }
+}
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+  --green: #5ff016;
+  --black: #111;
+  --white: #fff;
+  --light-color: #aaa;
+  --bg-color: #222;
+  --black-bg: rgba(17, 17, 17, 0.7);
+  --border: 0.2rem solid var(--green);
+}
+
+.section {
+  padding: 4.5rem 0 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: var(--green);
+  border: var(--border);
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+
+  &:hover {
+    background: var(--green);
+    color: var(--black);
+  }
+}
+
+.icon-xs {
+  width: 1.5rem;
+}
+
+.icon-s {
+  width: 2rem;
+}
+
+.icon-m {
+  width: 2.2rem;
+}
+
+.icon-l {
+  width: 4rem;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+// @media (max-width: 768px) {
+//   #menu-btn {
+//     display: inline-block !important;
+//   }
+//   .header .navbar {
+//     position: absolute;
+//     top: 99%;
+//     left: 0;
+//     right: 0;
+//     background: #222;
+//      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+//   }
+//   .header .navbar.active {
+//      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//   }
+//   .header .navbar a {
+//     margin: 2rem;
+//     font-size: 2rem;
+//     display: block;
+//   }
+//   .home {
+//     margin-top: 10rem;
+//   }
+//   .home .content span {
+//     font-size: 8vw;
+//   }
+//   .home .content h3 {
+//     font-size: 9vw;
+//   }
+// }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .about .content h3 {
+    font-size: 3.5rem;
+  }
+  .banner .content h3 {
+    font-size: 2.7rem;
+  }
+}
